@@ -1,0 +1,103 @@
+/* css for entire body  */
+body{
+    margin: 0px;
+    background-image: url('../img/download.jpg');
+}
+
+/* css for header  */
+.header {
+    overflow: hidden;
+    background-color: #fd0404;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* css for h1 in parent class header  */
+.h1{
+    color: white;    
+}
+
+/* css for container 1 */
+.container{
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-color: yellow;
+}
+
+/* css for form  */
+.form{
+    width: 100%;
+    font-size: 20px;
+}
+
+/* css for input fields  */
+.input{
+    width: 90%;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+/* css for label names */
+label{
+    color: blue;
+}
+
+/* css for button starts here  */
+.btn{
+    font-size: 20px;
+    color: white;
+    background-color: forestgreen;
+    border: 2px solid black;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/* css for container starts here  */
+.container2{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(21, 255, 0);
+}
+
+/* h2 css */
+.h2{
+    text-align: center;
+    color: blanchedalmond;
+}
+
+/* table css including th and td  */
+.table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+/* whole table width  */
+.table{
+    width: 100%;
+    
+}
+
+/* designing button for deleting records */
+.btn-danger{
+    background-color: red;
+    font-size: 25px;
+    color: white;
+    border-radius: 1px;
+}
+
+/* for making link's look pretty */
+a{
+    text-decoration: none;
+}
