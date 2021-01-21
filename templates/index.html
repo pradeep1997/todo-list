@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/index.css' )}} />
+</head>
+<body>
+    <!-- header starts here  -->
+    <header class="header">
+        <h1 class="h1">ToDo List</h1>
+    </header>
+    <!-- container starts here  -->
+    <div class="container">
+        <!-- form starts here  -->
+        <div class="form_class">
+            <h5 style="color: green; font-size: 20px;">Add New Employee</h5>
+            <form method="POST" class="form">
+                <label class="label"><b>Name:</b></label><br>
+                <input type="text" name="name" class="input" placeholder="Enter your name" required /><br><br>
+                <label class="lable"><b>Email:</b></label><br>
+                <input type="text" name="email" class="input" placeholder="Enter your email" required /><br><br>
+                <input type="submit" name="submit" class="btn" value="Add Employee" />
+            </form>
+        </div>
+    </div>
+    <!-- container 2 starts here  -->
+    <div class="container2">
+        <h2 class="h2"><u>Available Items</u></h2>
+        <!-- table starts here  -->
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Delete Data</th>
+            </tr>
+            <!-- python for loop in html  -->
+            {% for data in data %}
+            <tr>
+                <td>{{ data.id }}</td>
+                <td>{{ data.name }}</td>
+                <td>{{ data.email }}</td>
+                <td><a href="/delete/{{ data.id }}" class="btn-danger">DEL</a></td>
+            </tr>
+            <!-- for loop ends here  -->
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
